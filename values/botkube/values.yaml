@@ -4,7 +4,7 @@ communications:
   'default-group':
     discord:
       enabled: true
-      token: 'MTM3NzE4NjMwNDgxNDQ4NTYxNA.GrnSFY.quuu4GY9H5ShUld4kfSVeFkCcrBgqazsgAhDJU' # 토큰 입력
+      token: ${DISCORD_BOT_TOKEN} # 토큰 입력
       botID: '1377186304814485614' # botID 입력
       channels:
         'default':
