@@ -1,0 +1,25 @@
+settings:
+  clusterName: practice
+communications:
+  'default-group':
+    discord:
+      enabled: true
+      token: 'MTM3NzE4NjMwNDgxNDQ4NTYxNA.GrnSFY.quuu4GY9H5ShUld4kfSVeFkCcrBgqazsgAhDJU' # 토큰 입력
+      botID: '1377186304814485614' # botID 입력
+      channels:
+        'default':
+          id: '1377180433875341335' # channel id 입력
+executors:
+  k8s-default-tools:
+    botkube/kubectl:
+      displayName: "Kubectl"
+      enabled: true
+rbac:
+  groups:
+    'botkube-plugins-default':
+    # 필요에 따라 권한 설정 가능, 지금은 모든 권한이 열려있음
+      create: true
+      rules:
+        - apiGroups: ["*"]
+          resources: ["*"]
+          verbs: ["*"]
