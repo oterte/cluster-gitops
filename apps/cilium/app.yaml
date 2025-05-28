@@ -6,12 +6,10 @@ metadata:
 spec:
   project: default
   destination:  
-    name: ''
     namespace: kube-system
     server: https://kubernetes.default.svc
   sources:
-  - path: ''
-    repoURL: https://helm.cilium.io/
+  - repoURL: https://helm.cilium.io/
     targetRevision: 1.16.5
     chart: cilium
     helm:
